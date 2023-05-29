@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Order Page - Universal Bazaar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2 {
+      color: #333;
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .product {
+      width: 200px;
+      margin: 10px;
+      padding: 10px;
+      background-color: #f9f9f9;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+    }
+
+    .product h3, .product p {
+      margin: 5px 0;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"], input[type="email"] {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="submit"] {
+      padding: 10px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .order-summary {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+    }
+
+    .order-summary h3 {
+      margin-top: 0;
+    }
+
+    .order-summary p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Order Page - Universal Bazaar</h1>
+	
+
+    <h2>Products</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://assets.stickpng.com/images/585ea27bcb11b227491c350b.png" alt="Product 1">
+      <h3>PlayStation 4</h3>
+      <div class="price">₱30,390</div>
+        <input type="checkbox" name="products[]" value="PlayStation 4">
+      </div>
+
+      <div class="product">
+         <img src="https://ph-live-01.slatic.net/p/cd43672a63f6356bd4199d4ae6d1d480.png" alt="Product 2">
+      <h3>PlayStation 5</h3>
+      <div class="price">₱23,000</div>
+        <input type="checkbox" name="products[]" value="PlayStation 5">
+      </div>
+	  
+	  <div class="product">
+        <img src="https://www.technogoyani.com/wp-content/uploads/2023/01/image.png" alt="Product 1">
+      <h3>Iphone 15 Pro Max</h3>
+      <div class="price">₱65,518</div>
+        <input type="checkbox" name="products[]" value="Iphone 15 Pro Max">
+      </div>
+	  
+	  <div class="product">
+       <img src="https://thesneakart.com/cdn/shop/products/TSA-Sneakers-France-AirJordan-1-Retro-High-OG-SP-Travis-Scott-Fragment-Military-Blue-DH3227-105-1_2_2000x_058f55a6-bc84-4b71-a4a6-55739cc94256.png?v=1628368551" alt="Product 4">
+		<h3>Travis Scott Fragment Air Jordan 1 Military Blue </h3>
+      <div class="price">₱78,000</div>
+        <input type="checkbox" name="products[]" value="Travis Scott Fragment Air Jordan 1 Military Blue">
+      </div>
+	  
+	  <div class="product">
+        <img src="https://static.nike.com/a/images/t_default/e6da41fa-1be4-4ce5-b89c-22be4f1f02d4/air-force-1-07-shoes-WrLlWX.png" alt="Product 5">
+		<h3>Air Force 1</h3>
+      <div class="price">₱6,195</div>
+        <input type="checkbox" name="products[]" value="Air Force 1">
+      </div>
+	  
+	  <div class="product">
+       <img src="https://www.transparentpng.com/thumb/adidas-shoes/a4xO3G-adidas-shoes-adidas-shoe-kids-superstar-daddy-grade.png" alt="Product 6">
+		<h3>Adidas Superstar Athletic Shoe </h3>
+      <div class="price">₱5,300</div>
+        <input type="checkbox" name="products[]" value="Adidas Superstar Athletic Shoe">
+      </div>
+
+		<div class="product">
+         <img src="https://cdn.shopify.com/s/files/1/1684/4603/products/Samsung-S22-Ultra_Burgundy_1200x1200.png?v=1646200574" alt="Product 3">
+		<h3>Samsung S22 Ultra</h3>
+      <div class="price">₱58,392</div>
+        <input type="checkbox" name="products[]" value="Samsung S22 Ultra">
+      </div>
+	  
+	  <div class="product">
+        <img src="https://nzxt.com/assets/cms/34299/1683575844-playerthreeprime-hero-white.png?auto=format&fit=max&w=1200" alt="Product 4">
+		<h3>Player: Three Prime | Prebuilt Gaming PC | NZXT BLD</h3>
+      <div class="price">₱217,917</div>
+        <input type="checkbox" name="products[]" value="Player: Three Prime | Prebuilt Gaming PC | NZXT BLD">
+      </div>
+	  
+	  <div class="product">
+       <img src="https://images.samsung.com/is/image/samsung/p6pim/ph/lc49g95tssexxp/gallery/ph-odyssey-g9-lc49g95tssexxp-534657069?₱650_519_PNG$" alt="Product 5">
+		<h3>Samsung Odessey G9</h3>
+      <div class="price">₱77,299</div>
+        <input type="checkbox" name="products[]" value="Samsung Odessey G9">
+      </div>
+	  
+	  <div class="product">
+         <img src="https://imageio.forbes.com/specials-images/imageserve/6241e5a727a3ebf5af4650f5/The-Steam-Deck-displaying-various-playable-retro-games-/0x0.png?crop=1001,539,x106,y52,safe&height=382&width=711&fit=bounds" alt="Product 6">
+		<h3>Steam Deck</h3>
+      <div class="price">₱37,115</div>
+        <input type="checkbox" name="products[]" value="Steam Deck">
+      </div>
+
+    </div>
+
+  <h2>Customer Information</h2>
+<form id="order-form">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <!-- Add more customer information fields as needed -->
+
+  <button type="submit">Place Order</button>
+  <br>
+  </br>
+   <div class="buttons">
+    <button onclick="goToProductPage()">Go to Product Page</button>
+    <button onclick="goToHomePage()">Go to Home Page</button>
+  </div>
+</form>
+
+<div class="order-summary" id="order-summary"></div>
+
+<script>
+function goToProductPage() {
+      window.location.href = "Product.html"; 
+    }
+
+    function goToHomePage() {
+      window.location.href = "Home.html"; 
+    }
+document.getElementById("order-form").addEventListener("submit", function(event) {
+  event.preventDefault();
+  submitOrder();
+});
+
+function submitOrder() {
+  // Retrieve selected products and customer information from the form
+  const form = document.getElementById("order-form");
+  const name = form.elements["name"].value;
+  const email = form.elements["email"].value;
+  const selectedProducts = [];
+  
+  const productCheckboxes = document.querySelectorAll('input[name="products[]"]:checked');
+  for (let i = 0; i < productCheckboxes.length; i++) {
+    selectedProducts.push(productCheckboxes[i].value);
+  }
+
+  // Perform validation checks
+  if (!name || !email) {
+    alert("Error: Please provide your name and email.");
+    return;
+  }
+
+  if (selectedProducts.length === 0) {
+    alert("Error: Please select at least one product.");
+    return;
+  }
+
+  // Simulate order processing and compute the total amount
+  const totalAmount = calculateTotalAmount(selectedProducts);
+
+  // If the order is successfully placed, display the order summary
+  displayOrderSummary(name, email, selectedProducts, totalAmount);
+}
+
+function calculateTotalAmount(selectedProducts) {
+  // Define the prices for each product
+  const productPrices = {
+    "PlayStation 4": 30390,
+    "PlayStation 5": 23000,
+    "Iphone 15 Pro Max": 65518,
+    "Travis Scott Fragment Air Jordan 1 Military Blue": 78000,
+    "Air Force 1": 6195,
+    "Adidas Superstar Athletic Shoe": 5300,
+    "Samsung S22 Ultra": 58392,
+    "Player: Three Prime | Prebuilt Gaming PC | NZXT BLD": 217917,
+    "Samsung Odessey G9": 77299,
+    "Steam Deck": 37115
+  };
+
+  // Calculate the total amount based on the selected products
+  let total = 0;
+  for (const product of selectedProducts) {
+    if (productPrices.hasOwnProperty(product)) {
+      total += productPrices[product];
+    }
+  }
+  return total.toFixed(2); // Round to 2 decimal places
+}
+
+function displayOrderSummary(name, email, selectedProducts, totalAmount) {
+  const orderSummary = document.getElementById("order-summary");
+  orderSummary.innerHTML = `
+    <h3>Order Summary</h3>
+    <p>Name: ${name}</p>
+    <p>Email: ${email}</p>
+    <p>Selected Products: ${selectedProducts.join(", ")}</p>
+    <p>Total Amount: ₱${totalAmount}</p>
+  `;
+  orderSummary.style.display = "block";
+  alert("Order placed successfully!");
+  
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Universal Bazaar Product Gallery</title>
+  <style>
+    /* CSS styles for the page */
+    /* Add your own styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #eaeaea;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Set minimum height to make footer sticky */
+    }
+    .banner {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .navbar {
+      background-color: #007bff;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+    }
+    .navbar a {
+      margin: 0 10px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      padding: 20px;
+      flex-grow: 1; /* Allow gallery to grow and fill remaining space */
+    }
+    .product {
+      border: 1px solid #ccc;
+      padding: 10px;
+      background-color: #fff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .product img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 5px;
+}
+    .product .description {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .product .price {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .footer {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-size: 12px;
+      margin-top: auto; /* Push the footer to the bottom */
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <h1>Welcome to Universal Bazaar</h1>
+  </div>
+  
+  <div class="navbar">
+    <a href="Home.html">Home</a>
+    <a href="Ordering-Page.html">Order</a>
+  </div>
+  
+  <div class="gallery">
+    <div class="product">
+      <img src="https://assets.stickpng.com/images/585ea27bcb11b227491c350b.png" alt="Product 1">
+      <h3>PlayStation 4</h3>
+      <div class="price">₱30,390</div>
+    </div>
+	
+    <div class="product">
+       <img src="https://ph-live-01.slatic.net/p/cd43672a63f6356bd4199d4ae6d1d480.png" alt="Product 2">
+      <h3>PlayStation 5</h3>
+      <div class="price">₱23,000</div>
+    </div>
+	
+    <div class="product">
+       <img src="https://www.technogoyani.com/wp-content/uploads/2023/01/image.png" alt="Product 1">
+      <h3>Iphone 15 Pro Max</h3>
+      <div class="price">₱65,518</div>
+    </div>
+	
+    <div class="product">
+      <img src="https://thesneakart.com/cdn/shop/products/TSA-Sneakers-France-AirJordan-1-Retro-High-OG-SP-Travis-Scott-Fragment-Military-Blue-DH3227-105-1_2_2000x_058f55a6-bc84-4b71-a4a6-55739cc94256.png?v=1628368551" alt="Product 4">
+<h3>Travis Scott Fragment Air Jordan 1 Military Blue </h3>
+      <div class="price">₱78,000</div>
+    </div>
+	
+    <div class="product">
+      <img src="https://static.nike.com/a/images/t_default/e6da41fa-1be4-4ce5-b89c-22be4f1f02d4/air-force-1-07-shoes-WrLlWX.png" alt="Product 5">
+<h3>Air Force 1</h3>
+      <div class="price">₱6,195</div>
+    </div>
+	
+    <div class="product">
+      <img src="https://www.transparentpng.com/thumb/adidas-shoes/a4xO3G-adidas-shoes-adidas-shoe-kids-superstar-daddy-grade.png" alt="Product 6">
+ <h3>Adidas Superstar Athletic Shoe </h3>
+      <div class="price">₱5,300</div>
+    </div>
+	
+    <div class="product">
+      <img src="https://cdn.shopify.com/s/files/1/1684/4603/products/Samsung-S22-Ultra_Burgundy_1200x1200.png?v=1646200574" alt="Product 3">
+<h3>Samsung S22 Ultra</h3>
+      <div class="price">₱58,392</div>
+    </div>
+	
+    <div class="product">
+      <img src="https://nzxt.com/assets/cms/34299/1683575844-playerthreeprime-hero-white.png?auto=format&fit=max&w=1200" alt="Product 4">
+<h3>Player: Three Prime | Prebuilt Gaming PC | NZXT BLD</h3>
+      <div class="price">₱217,917</div>
+    </div>
+	
+    <div class="product">
+      <img src="https://images.samsung.com/is/image/samsung/p6pim/ph/lc49g95tssexxp/gallery/ph-odyssey-g9-lc49g95tssexxp-534657069?₱650_519_PNG$" alt="Product 5">
+<h3>Samsung Odessey G9</h3>
+      <div class="price">₱77,299</div>
+    </div>
+	
+    <div class="product">
+      <img src="https://imageio.forbes.com/specials-images/imageserve/6241e5a727a3ebf5af4650f5/The-Steam-Deck-displaying-various-playable-retro-games-/0x0.png?crop=1001,539,x106,y52,safe&height=382&width=711&fit=bounds" alt="Product 6">
+ <h3>Steam Deck</h3>
+      <div class="price">₱37,115</div>
+    </div>
+  </div>
+  
+  <div class="footer">
+    &copy; 2023 Universal Bazaar. All rights reserved.
+  </div>
+</body>
+</html>
